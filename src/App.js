@@ -23,10 +23,7 @@ import { Rings } from "./Rings";
 function CarShow() {
   return (
     <>
-      <OrbitControls 
-        target={[0, 0.35, 0]}
-        maxPolarAngle={1.45}
-      />
+      <OrbitControls target={[0, 0.35, 0]} maxPolarAngle={1.45} />
 
       <PerspectiveCamera makeDefault fov={50} position={[3, 2, 5]} />
 
@@ -86,7 +83,23 @@ function CarShow() {
 
 function App() {
   return (
-    <Suspense fallback={null}>
+    <Suspense
+      fallback={
+        <>
+          <div class="welcome">
+            <span id="splash-overlay" class="splash"></span>
+            <span id="welcome" class="z-depth-4"></span>
+            <header class="texts">
+              <h1 className="t1">Loading....</h1>
+              <h3 className="t2">The website might slow down your pc</h3>
+              <p className="t3">
+                Created with ♥ by Saidur Rahman with Three JS
+              </p>
+            </header>
+          </div>
+        </>
+      }
+    >
       <Canvas shadows>
         <CarShow />
       </Canvas>
