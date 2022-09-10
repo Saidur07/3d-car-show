@@ -183,15 +183,14 @@ body.welcome {
 .t1 {
   color: #039be5;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 3em;
+  font-size: 5em;
 }
 .t2 {
   color: rgb(185, 24, 24);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 4em;
+  font-size: 2em;
 }
 .t3 {
   color: rgb(10, 172, 104);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 2em;
 }
